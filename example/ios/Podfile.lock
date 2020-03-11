@@ -2,10 +2,16 @@ PODS:
   - Flutter (1.0.0)
   - proto_buf_flutter_impl (0.0.1):
     - Flutter
+    - SwiftProtobuf (~> 1.4)
+  - SwiftProtobuf (1.8.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - proto_buf_flutter_impl (from `.symlinks/plugins/proto_buf_flutter_impl/ios`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftProtobuf
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,7 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  proto_buf_flutter_impl: aa86ff494092b9c34c6bbe8ccfebe08844c27de3
+  proto_buf_flutter_impl: 78785a7dddee205b678673e887cf1c9aedf3ec68
+  SwiftProtobuf: 2cbd9409689b7df170d82a92a33443c8e3e14a70
 
 PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
 
