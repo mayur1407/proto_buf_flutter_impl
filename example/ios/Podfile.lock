@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - proto_buf_flutter_impl (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - proto_buf_flutter_impl (from `.symlinks/plugins/proto_buf_flutter_impl/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  proto_buf_flutter_impl:
+    :path: ".symlinks/plugins/proto_buf_flutter_impl/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  proto_buf_flutter_impl: aa86ff494092b9c34c6bbe8ccfebe08844c27de3
+
+PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
+
+COCOAPODS: 1.9.0.beta.3
