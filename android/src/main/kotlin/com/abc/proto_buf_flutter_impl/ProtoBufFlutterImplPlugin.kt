@@ -34,7 +34,12 @@ public class ProtoBufFlutterImplPlugin: FlutterPlugin, MethodCallHandler {
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+      val employee = EmployeeOuterClass.Employee.newBuilder().setName("Android").setAge(20).build()
+      try {
+            result.success(employee.toByteArray())
+        } catch (e: Exception) {
+            result.error("Serialization error", null, null)
+        }
     } else {
       result.notImplemented()
     }
