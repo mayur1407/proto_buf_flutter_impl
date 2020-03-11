@@ -9,6 +9,14 @@ public class SwiftProtoBufFlutterImplPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+     do {
+        let employee = Employee.with { (emp) in
+            emp.name = "Leo"
+            emp.age = 29
+        }
+        result(try employee.serializedData())
+    } catch {
+        result(FlutterError(code: "Serialization error", message: nil, details: nil))
+    }
   }
 }
